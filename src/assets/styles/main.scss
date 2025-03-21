@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "variables";
+@import "base/variables";
 
 /**
  * Import npm dependencies
@@ -23,6 +23,7 @@
  * It's a best practice to use a different partial for each page
  */
 
+@import "base/base";
 @import "layouts/home";
 
 /**
