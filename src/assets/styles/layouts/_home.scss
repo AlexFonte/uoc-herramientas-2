@@ -11,8 +11,8 @@ body {
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  background-color: $bg-web;
+  color: $color_navy;
 }
 
 .uoc-container {
@@ -43,7 +43,7 @@ body {
   font-family: $font-family-serif;
   font-size: 24px;
   font-weight: 700;
-  color: $uoc-corporate;
+  color: $color_navy;
 
   @media (min-width: $mqMinWidth) {
     font-size: 36px;
@@ -51,6 +51,7 @@ body {
 }
 
 .uoc-footer {
+  background-color: $color_navy;
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;

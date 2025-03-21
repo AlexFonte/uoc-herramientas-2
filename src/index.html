@@ -1,36 +1,84 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!<i class="fas fa-university"></i></h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description"
+    content="Conoce la historia de uno de los platos más tradicionales de la gastronomía del norte de Portugal, Viana do Castelo" />
+
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <!-- do not remove this line! -->
+  <link rel="icon" href="assets/images/logo-bg.svg" type="image/svg" />
+
+  <title>Bacalau al estilo de Viana</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+  <main class="container">
+
+    <section class="origen">
+      <h2 class="origen__title">Origen</h2>
+      <div class="origen__content">
+        <p>Siendo <b>Viana do Castelo</b>, el puerto mas al norte de la costa portuguesa, siempre a tenido un acceso
+          privilegiado al bacalao procedente de los mares del norte. El célebre navegante <em>João Álvares
+            Fagundes<em></em>, quien nevago hasta Terranova, en Canadá, una zona de pesca de bacalao históricamente
+            aprovechada por los portugueses, era originario de Viana.</p>
+        <p>Dicho producto fue utilizado desde muy
+          temprano por los navegantes portugueses en sus viajes, debido a su larga vida util y la facilidad de
+          transporte asi como la conservación.</p>
+        <p> Por lo cual muchas de las principales recetas de bacalao portuguesas tienen su origen en Viana do Castelo,
+          como el <em>Bacalhau à Moda de Viana do Castelo</em>.</p> Existen muchas recetas con este mismo nombre, pero
+        en este caso haremos la mas tradicioanl.
+        </p>
+      </div>
+    </section>
+
+    <section class="receta">
+      <h2 class="receta__title">Receta</h2>
+      <article>
+        <h3>Ingredientes:</h3>
+        <ul>
+          <li>1 filete de bacalao desalado por persona</li>
+          <li>1/2 kilo de patatas</li>
+          <li>1 col portuguesa</li>
+          <li>2 cebollas</li>
+          <li>2 dientes de ajo</li>
+          <li>1L de aceite</li>
+          <li>Medio pan de maiz o senteno</li>
+          <li>Pimenton dulce</li>
+          <li>Perejil</li>
+          <li>Aceitunas</li>
+          <li>Sal y pimienta</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Preparación:</h3>
+        <ol>
+          <li>Corte la cebolla en juliana, y pique 1 ajo.</li>
+          <li>En un cazuela heche la cebolla, el ajo picado y pimenton dulce al gusto. Deje confitar a baja temperatura.
+          </li>
+          <li>En una sarten coloque el bacalao y heche agua hiverndo, dejelo durante unos momentos apenas, para abrir
+            las lascas. Unas vez abiertas escurra el bacalao.</li>
+          <li>Ahora coloque el bacalo en la cazuela, junto con las cebollas y deje cocinarlo a baja temperatura, hasta
+            que este hecho.</li>
+          <li>Corte las patatas con la piel en rodajas gruesas. Dejarlas cocer y dorarlas en el mimso aciete.</li>
+          <li>Cocer la col en agua y sal al gusto.</li>
+          <li>Una vez cocida la col, salte la col con el aceite del bacalao y ajo.</li>
+          <li>Corte una rebana de pan de maiz o senteno, y freir en el aceite de oliva.</li>
+          <li>Ponga el bacalao en un plato con el la col salteada, patatas y la rebanada de pan frito.</li>
+          <li>Decore con aceiteunas y perejil</li>
+        </ol>
+      </article>
+      </div>
+    </section>
+
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+  <!-- do not remove this line! -->
+</body>
+
 </html>
