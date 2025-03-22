@@ -12,8 +12,10 @@ $color_yellow: #f3c623;
 $color_orange: #eb8317;
 $color_grey: #f4f6ff;
 $color_white: #ffffff;
-$bg_web: color.scale($color_grey, $lightness: 70%);
+$bg_web: color.scale($color_blue, $lightness: 95%);
 
 //################ MEDIA QUERIES ################
 
 $mqMinWidth: 420px;
+$mqMinWidth800px: 800px;
+$mqMinWidth992px: 992px;

@@ -1,0 +1,45 @@
+@use "sass:color";
+
+.container {
+
+    width: 90%;
+    margin: auto;
+
+    @media screen and (min-width: $mqMinWidth800px) {
+        width: 80%;
+    }
+
+}
+
+.section {
+    // color: $color_white;
+    background-color: $color_white; //color.scale($color_navy, $lightness: 15%);
+    ;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    border: 3px solid $color_yellow;
+
+    &__title {
+        text-align: center;
+        font-size: 2.8rem;
+        margin: 0;
+        color: $color_navy;
+        padding: 1rem 1.5rem;
+        border-radius: 15px;
+        background-color: $color_white;
+
+
+    }
+
+    &__content {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.underline {
+    border-bottom: 3px solid $color_orange;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

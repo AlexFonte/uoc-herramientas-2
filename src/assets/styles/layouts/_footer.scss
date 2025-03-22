@@ -3,6 +3,7 @@
     color: $color_white;
     text-align: center;
     font-size: 1.4rem;
+    margin-top: 2rem;
 
     a {
         color: $color_white
@@ -15,10 +16,10 @@
     &__container {
         @include flex(column, center, center, center);
         padding: 1rem 0;
-        max-width: 100%;
+        max-width: 90%;
         margin: auto;
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: $mqMinWidth800px) {
             & {
                 max-width: 80%;
                 flex-direction: row;
