@@ -1,18 +1,36 @@
 .footer {
     background-color: $color_navy;
-}
+    color: $color_white;
+    text-align: center;
+    font-size: 1.4rem;
 
-.footer__container {
-    @include flex(row, center, center, center);
-    padding: 1rem 0;
-    max-width: 100%;
-    margin: auto;
+    a {
+        color: $color_white
+    }
 
-    @media screen and (min-width: 800px) {
-        & {
-            max-width: 80%;
-            flex-direction: column;
-            align-content: space-between;
+    a:hover {
+        color: $color_yellow;
+    }
+
+    &__container {
+        @include flex(column, center, center, center);
+        padding: 1rem 0;
+        max-width: 100%;
+        margin: auto;
+
+        @media screen and (min-width: 800px) {
+            & {
+                max-width: 80%;
+                flex-direction: row;
+                justify-content: space-between;
+            }
         }
+    }
+
+    &__medias {
+        padding: 0;
+        list-style: none;
+        @include flex(row, space-around, center, center);
+        gap: 2rem;
     }
 }

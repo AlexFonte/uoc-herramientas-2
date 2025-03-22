@@ -97,11 +97,12 @@
 
 
     .box__navy {
-        background-color: rgba($color_navy, 0.9);
-        color: $color_white;
+        background-color: rgba($color_white, 0.8);
+        color: $color_navy;
         padding: 1rem 1.5rem;
         border-radius: 20px;
         width: 200px;
+        border: 2px solid $color_navy;
     }
 
 }
