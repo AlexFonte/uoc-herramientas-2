@@ -14,11 +14,11 @@
 .section {
     // color: $color_white;
     background-color: $color_white; //color.scale($color_navy, $lightness: 15%);
-    ;
+
     border-radius: 20px;
     padding-bottom: 1rem;
     margin-top: 2rem;
-    border: 3px solid $color_yellow;
+    border: 3px solid $color_orange; //color.scale($color_orange, $blackness: 35%);
 
     &__title {
         text-align: center;
@@ -26,10 +26,6 @@
         margin: 0;
         color: $color_navy;
         padding: 1rem 1.5rem;
-        border-radius: 15px;
-        background-color: $color_white;
-
-
     }
 
     &__content {
@@ -42,4 +38,8 @@
     border-bottom: 3px solid $color_orange;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+
+    i {
+        color: $color_orange
+    }
 }
