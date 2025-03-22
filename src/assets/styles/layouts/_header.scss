@@ -52,7 +52,8 @@
         text-align: center;
         margin-top: 2rem;
         gap: 2rem;
-
+        width: 80%;
+        margin: auto;
 
         &__title {
             font-size: 4rem;
@@ -65,13 +66,15 @@
             font-size: 1.8rem;
             list-style: none;
             padding: 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
 
             @media screen and (min-width: 992px) {
                 width: 80%;
             }
 
             &__list {
-                margin-top: 2rem;
+                margin: 0;
                 padding: 0;
                 list-style: none;
                 @include flex(column, space-around, center, center);
@@ -80,7 +83,6 @@
                 @media screen and (min-width: 800px) {
                     & {
                         flex-direction: row;
-                        ;
                     }
                 }
 
@@ -94,5 +96,12 @@
     }
 
 
+    .box__navy {
+        background-color: rgba($color_navy, 0.9);
+        color: $color_white;
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        width: 200px;
+    }
 
 }
