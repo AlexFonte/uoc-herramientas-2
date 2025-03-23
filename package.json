@@ -8,8 +8,8 @@
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "stylelint": "stylelint src/**/*.scss",
-    "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "dev": "npm-run-all clean stylelint parcel:serve",
+    "build": "npm-run-all clean stylelint parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "targets": {

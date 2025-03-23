@@ -4,7 +4,6 @@
 $font-family-sans-serif: "Onest", sans-serif;
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-
 //################ COLORS ################
 $color_navy: #1f31a8;
 $color_blue: #4b91f1;
@@ -19,3 +18,5 @@ $bg_web: color.scale($color_blue, $lightness: 95%);
 $mqMinWidth: 420px;
 $mqMinWidth800px: 800px;
 $mqMinWidth992px: 992px;
+
+$box-shadow: 5px 7px 5px 1px rgba($color_navy, 0.70);

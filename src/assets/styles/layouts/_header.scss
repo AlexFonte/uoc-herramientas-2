@@ -50,7 +50,6 @@
         position: relative;
         color: $color_white;
         text-align: center;
-        margin-top: 2rem;
         gap: 2rem;
         width: 80%;
         margin: auto;
@@ -61,13 +60,12 @@
         }
 
         &__info {
-            color: $color_navy;
-            background-color: rgba($color_yellow, 0.9);
-            font-size: 1.8rem;
+            @include box(20px, rgba($color_yellow, 0.9));
             list-style: none;
-            padding: 2rem;
-            border-radius: 20px;
+            color: $color_navy;
+            font-size: 1.8rem;
             margin-bottom: 2rem;
+            padding: 2rem;
 
             @media screen and (min-width: $mqMinWidth992px) {
                 width: 80%;
@@ -96,12 +94,11 @@
     }
 
     .box__navy {
-        background-color: rgba($color_white, 0.8);
+        @include box-border(2px solid $color_navy, 20px, rgba($color_white, 0.8));
         color: $color_navy;
         padding: 1rem 1.5rem;
-        border-radius: 20px;
         width: 200px;
-        border: 2px solid $color_navy;
+
     }
 
 }

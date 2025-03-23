@@ -5,3 +5,19 @@
     align-items: $align;
     align-content: $content;
 }
+
+@mixin box($radius: 20px, $bckg-color: $color_white) {
+    border-radius: $radius;
+    background-color: $bckg-color;
+}
+
+@mixin box-border($border: 3px solid $color_orange, $radius: 20px, $bckg-color: $color_white) {
+    @include box($radius, $bckg-color);
+    border: $border;
+}
+
+@mixin box-bottom-border($bottom: 3px solid, $btm-left: 5px, $btm-right: 5px) {
+    border-bottom: $bottom;
+    border-bottom-left-radius: $btm-left;
+    border-bottom-right-radius: $btm-right;
+}

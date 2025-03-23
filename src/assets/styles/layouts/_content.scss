@@ -1,7 +1,6 @@
 @use "sass:color";
 
 .container {
-
     width: 90%;
     margin: auto;
 
@@ -13,12 +12,10 @@
 
 .section {
     // color: $color_white;
-    background-color: $color_white; //color.scale($color_navy, $lightness: 15%);
-
-    border-radius: 20px;
+    @include box-border(3px solid $color_orange, 20px, $color_white);
+    box-shadow: $box-shadow;
     padding-bottom: 1rem;
     margin-top: 2rem;
-    border: 3px solid $color_orange; //color.scale($color_orange, $blackness: 35%);
 
     &__title {
         text-align: center;
@@ -35,9 +32,7 @@
 }
 
 .underline {
-    border-bottom: 3px solid $color_orange;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    @include box-bottom-border (3px solid $color_orange, 5px, 5px);
 
     i {
         color: $color_orange
