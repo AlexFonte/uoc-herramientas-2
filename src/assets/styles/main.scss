@@ -11,24 +11,25 @@
 @import "utils/mixins";
 
 /**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
+* Import npm dependencies
+* see: https://v2.parceljs.org/features/module-resolution/
+* see commented examples below
+*/
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 /**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
+* Import layouts
+* It's a best practice to use a different partial for each page
+*/
 
 @import "base/base";
 @import "layouts/header";
 @import "layouts/content";
 @import "layouts/footer";
 
+@import "states/hover";
 /**
  * Do NOT include anything else in this file!
  */
