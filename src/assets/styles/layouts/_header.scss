@@ -1,24 +1,23 @@
-.header {
+.nav {
+    background-color: $color_navy;
 
-    .nav {
-        background-color: $color_navy;
+    &__content {
+        @include flex(row, center, center, center);
+        padding: 1rem 0;
+        max-width: 100%;
+        margin: auto;
 
-        &__content {
-            @include flex(row, center, center, center);
-            padding: 1rem 0;
-            max-width: 100%;
-            margin: auto;
-
-            @media screen and (min-width: $mqMinWidth992px) {
-                & {
-                    max-width: 80%;
-                    flex-direction: column;
-                    align-content: space-between;
-                }
+        @media screen and (min-width: $mqMinWidth992px) {
+            & {
+                max-width: 80%;
+                flex-direction: column;
+                align-content: space-between;
             }
         }
     }
+}
 
+.header {
     &__content {
         position: relative;
         height: auto;
@@ -59,46 +58,43 @@
             line-height: 5rem;
         }
 
-        &__info {
-            @include box(20px, rgba($color_yellow, 0.9));
-            list-style: none;
-            color: $color_navy;
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            padding: 2rem;
 
-            @media screen and (min-width: $mqMinWidth992px) {
-                width: 80%;
-            }
+    }
 
-            &__list {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                @include flex(column, space-around, center, center);
-                gap: 1rem;
+    &__info {
+        @include box(20px, rgba($color_yellow, 0.9));
+        list-style: none;
+        color: $color_navy;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
 
-                @media screen and (min-width: $mqMinWidth800px) {
-                    & {
-                        flex-direction: row;
-                    }
-                }
-
-                li {
-                    @include flex(row, space-around, center, center);
-                    gap: 2rem;
-                }
-            }
-
+        @media screen and (min-width: $mqMinWidth992px) {
+            width: 80%;
         }
     }
 
-    .box__navy {
-        @include box-border(2px solid $color_navy, 20px, rgba($color_white, 0.8));
-        color: $color_navy;
-        padding: 1rem 1.5rem;
-        width: 200px;
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include flex(column, space-around, center, center);
+        gap: 1rem;
 
+        @media screen and (min-width: $mqMinWidth800px) {
+            & {
+                flex-direction: row;
+            }
+        }
     }
+}
+
+.box__navy {
+    @include flex(row, space-around, center, center);
+    gap: 2rem;
+    @include box-border(2px solid $color_navy, 20px, rgba($color_white, 0.8));
+    color: $color_navy;
+    padding: 1rem 1.5rem;
+    width: 200px;
 
 }
