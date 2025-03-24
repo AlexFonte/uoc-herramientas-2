@@ -89,7 +89,7 @@
     }
 }
 
-.box__navy {
+.box__white {
     @include flex(row, space-around, center, center);
     gap: 2rem;
     @include box-border(2px solid $color_navy, 20px, rgba($color_white, 0.8));
