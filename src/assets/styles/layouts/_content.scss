@@ -54,7 +54,6 @@
     &__ingredients {
         width: 100%;
 
-
         @media screen and (min-width: $mqMinWidth1200px) {
             width: 33%;
         }
@@ -87,6 +86,7 @@
         height: 100%;
         aspect-ratio: 600/400;
         object-fit: cover;
+        object-position: center;
         width: 100%;
         margin: auto;
         box-shadow: $box-shadow;
@@ -102,16 +102,6 @@
 
 }
 
-// .section__content__info {
-
-//     @include flex(column, center, center, center);
-//     width: 100%;
-
-//     @media screen and (min-width: $mqMinWidth800px) {
-//         flex-direction: row;
-//         justify-content: space-between;
-//     }
-// }
 .ingredients::marker {
     color: $color_orange;
 }
@@ -139,7 +129,4 @@
             font-weight: bold;
         }
     }
-
-
-
 }
