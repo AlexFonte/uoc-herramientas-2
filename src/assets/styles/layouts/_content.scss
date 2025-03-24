@@ -54,6 +54,7 @@
     &__ingredients {
         width: 100%;
 
+
         @media screen and (min-width: $mqMinWidth1200px) {
             width: 33%;
         }
@@ -117,6 +118,10 @@
     color: $color_orange;
 }
 
+.ingredients::marker {
+    color: $color_orange;
+}
+
 .steps {
     list-style: none;
     counter-reset: step;
@@ -131,16 +136,13 @@
         &::before {
             content: counter(step);
             counter-increment: step;
+            @include flex(row, center, center, center);
+            @include box(50%, $color_orange);
             color: $color_white;
-            background-color: $color_orange;
-            border-radius: 50%;
-            justify-content: center;
-            align-items: center;
             width: 2.5rem;
             height: 2.5rem;
             font-size: 1.4rem;
             font-weight: bold;
-            display: flex;
         }
     }
 
