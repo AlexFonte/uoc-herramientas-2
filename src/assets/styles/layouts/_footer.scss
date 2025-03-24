@@ -6,11 +6,11 @@
     margin-top: 2rem;
 
     a {
-        color: $color_white
-    }
+        color: $color_white;
 
-    a:hover {
-        color: $color_yellow;
+        &:hover {
+            color: $color_yellow;
+        }
     }
 
     &__container {
@@ -20,11 +20,9 @@
         margin: auto;
 
         @media screen and (min-width: $mqMinWidth800px) {
-            & {
-                max-width: 80%;
-                flex-direction: row;
-                justify-content: space-between;
-            }
+            max-width: 80%;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 

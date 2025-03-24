@@ -13,11 +13,20 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-text;
   font-size: 1.6rem;
   line-height: 24px;
   background-color: $bg-web;
   color: $color_navy;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
 }
 
 .svg {
