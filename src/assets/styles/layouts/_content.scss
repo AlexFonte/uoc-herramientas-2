@@ -1,5 +1,3 @@
-@use "sass:color";
-
 .container {
     width: 90%;
     margin: auto;
@@ -11,7 +9,6 @@
 }
 
 .section {
-    // color: $color_white;
     @include box-border(3px solid $color_orange, 20px, $color_white);
     box-shadow: $box-shadow;
     margin-top: 3rem;

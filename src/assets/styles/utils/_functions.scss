@@ -1,0 +1,10 @@
+@use "sass:color";
+
+//Color scale function
+@function color-scale-lightness($color, $value: 10%) {
+    @return color.scale($color, $lightness: $value);
+}
+
+@function color-scale-alpha($color, $value: -10%) {
+    @return color.scale($color, $alpha: $value);
+}

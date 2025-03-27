@@ -58,7 +58,7 @@
     }
 
     &__info {
-        @include box(20px, rgba($color_yellow, 0.9));
+        @include box(20px, color-scale-alpha($color_yellow, -10%));
         list-style: none;
         color: $color_navy;
         font-size: 1.8rem;
@@ -88,7 +88,7 @@
 .box__white {
     @include flex(row, space-around, center, center);
     gap: 2rem;
-    @include box-border(2px solid $color_navy, 20px, rgba($color_white, 0.8));
+    @include box-border(2px solid $color_navy, 20px, color-scale-alpha($color_white, -20%));
     color: $color_navy;
     padding: 1rem 1.5rem;
     width: 200px;

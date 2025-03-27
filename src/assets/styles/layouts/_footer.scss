@@ -27,9 +27,9 @@
     }
 
     &__medias {
+        @include flex(row, space-around, center, center);
         padding: 0;
         list-style: none;
-        @include flex(row, space-around, center, center);
         gap: 2rem;
     }
 }
