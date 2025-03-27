@@ -5,6 +5,7 @@
     @return color.scale($color, $lightness: $value);
 }
 
+//Opacar color function
 @function color-scale-alpha($color, $value: -10%) {
     @return color.scale($color, $alpha: $value);
 }

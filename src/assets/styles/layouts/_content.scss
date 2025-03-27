@@ -1,3 +1,4 @@
+// CONTINGUT DE GENERAL DE LA WEB (body)
 .container {
     width: 90%;
     margin: auto;
@@ -8,6 +9,7 @@
 
 }
 
+// CAIXA DE SECCIONS
 .section {
     @include box-border(3px solid $color_orange, 20px, $color_white);
     box-shadow: $box-shadow;
@@ -31,6 +33,7 @@
         width: 90%;
     }
 
+    //INFO DE LA SECCIO
     &__info {
         @include flex(column, center, center, center);
         gap: 2rem;
@@ -55,6 +58,7 @@
         }
     }
 
+    // CAIXA DE LES IMATGES
     &__picture {
         @include flex(column, center, center, center);
         grid-gap: 2rem;
@@ -77,6 +81,7 @@
         }
     }
 
+    //IMATGES DE LA RECEPTA
     &__image {
         @include box-border(3px solid $color_orange, 20px, $color_white);
         aspect-ratio: 600/400;
@@ -89,6 +94,7 @@
     }
 }
 
+// SUBRALLAT TITOLS 
 .underline {
     @include box-bottom-border(3px solid $color_orange, 5px, 5px);
 
@@ -102,6 +108,7 @@
     color: $color_orange;
 }
 
+// PASOS DE LA RECEPTA
 .steps {
     counter-reset: step;
     list-style: none;

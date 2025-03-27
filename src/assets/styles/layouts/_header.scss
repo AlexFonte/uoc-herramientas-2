@@ -1,6 +1,7 @@
 .nav {
     background-color: $color_navy;
 
+    //Contingut de navegació de la pagina
     &__content {
         @include flex(row, center, center, center);
         padding: 1rem 0;
@@ -23,6 +24,7 @@
         overflow: hidden;
     }
 
+    // IMATGE DEL HEADER AMB OPACITAT
     &__picture {
         width: 100%;
         max-height: 30rem;
@@ -41,6 +43,7 @@
         }
     }
 
+    // MINI RESUM DE LA RECEPTA
     &__resume {
         @include flex(column, center, center, center);
         z-index: 1;
@@ -57,6 +60,7 @@
         }
     }
 
+    // TEXT MINI RESUM DE LA RECEPTA
     &__info {
         @include box(20px, color-scale-alpha($color_yellow, -10%));
         list-style: none;
@@ -70,6 +74,7 @@
         }
     }
 
+    //LLISTA DE LA INFO DE LA RECEPTA
     &__list {
         margin: 0;
         padding: 0;
@@ -85,6 +90,7 @@
     }
 }
 
+// CLASES DE CAIXES BOX WHITE
 .box__white {
     @include flex(row, space-around, center, center);
     gap: 2rem;

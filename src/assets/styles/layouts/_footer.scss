@@ -13,6 +13,7 @@
         }
     }
 
+    //Contingunt del footer
     &__container {
         @include flex(column, center, center, center);
         padding: 1rem 0;
@@ -26,6 +27,7 @@
         }
     }
 
+    // XARXES SOCIALS DEL FOOTER
     &__medias {
         @include flex(row, space-around, center, center);
         padding: 0;

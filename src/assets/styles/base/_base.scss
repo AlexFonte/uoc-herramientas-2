@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
+//font global per utilitzar rem
 html {
   font-size: 10px;
 }
 
+//regla global per a tot el body
 body {
   display: flex;
   flex-direction: column;
@@ -20,6 +22,7 @@ body {
   color: $color_navy;
 }
 
+//font family per a tots els títols
 h1,
 h2,
 h3,
@@ -29,6 +32,7 @@ h6 {
   font-family: $font-family-title;
 }
 
+//afegir curosr sobre el logo de la web
 .svg {
   cursor: pointer;
 }

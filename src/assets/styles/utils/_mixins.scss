@@ -1,3 +1,4 @@
+// flex box css
 @mixin flex($direction: row, $justify: center, $align: center, $content: center) {
     display: flex;
     flex-direction: $direction;
@@ -6,6 +7,7 @@
     align-content: $content;
 }
 
+// Generar un box
 @mixin box($radius: 20px, $bckg-color: $color_white) {
     border-radius: $radius;
     background-color: $bckg-color;
